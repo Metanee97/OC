@@ -179,12 +179,36 @@ p {
 }
 
 /* Accomodation section */
-.accomodation {
+/* //////////////////////////////////////////////// */
+.accomodations {
   display: flex;
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 2px dotted blue;
 }
+.marseille-accomodations {
+  width: 65%;
+  padding: 2%;
+  background-color: #F2F2F2;
+  border: 2px dotted yellow;
+}
+
+.accomodation-card {
+  background-color: #FFF;
+  border: 2px solid red;
+  padding: 5px;
+}
+.accomodation-card-image {
+  width: 100%;
+}
+/* popular section */
+.most-popular {
+  width: 35%;
+  padding: 2%;
+  background-color: #F2F2F2;
+  border: 2px solid green;
+}
+
 /* Activities section */
 .activities {
   width: 90%;
