@@ -19,32 +19,42 @@
         </ul>
       </nav>
     </header>
-    <!--  Searching section  -->
+    <!-- //// Searching section  //// -->
     <main>
       <section class="searching">
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <p>Barre de recherche</p>
-        <!---->
-        <!--  -->
-        <div class="filters-bar">
+
+        <!-- //// search form //// -->
+        <form method="post" action="search.php">
+          <div class="search-bar">
+            <div><i class="search-icon fas fa-map-marker-alt"></i></div>
+            <input type="search" name="location" class="search" value="Marseille, France">
+            <div>
+              <button type="submit" class="btn-search">Rechercher</button>
+            </div>
+          </div>
+        </form>
+        <!-- //// Filters //// -->
+        <section class="filters-bar">
           <p>Filtres</p>
-          <div class="filter">
-            <a href="#"><span class="icon"><i class="fas fa-money-bill-wave"></i></span>Économique</a>
-          </div>
-          <div class="filter">
-            <a href="#"><span class="icon"><i class="fas fa-child"></i></span>Familial</a>
-          </div>
-          <div class="filter">
-            <a href="#"><span class="icon"><i class="fas fa-heart"></i></span>Romantique</a>
-          </div>
-          <div class="filter">
-            <a href="#"><span class="icon"><i class="fas fa-dog"></i></span>Animaux autorisés</a>
-          </div>
-        </div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
+          <ul class="filters-bar-list">
+            <li class="filter-bar-list-item">
+              <div class="filter-icon"><i class="fas fa-money-bill-wave"></i></div>
+              <span>Économique</span>
+            </li>
+            <li class="filter-bar-list-item">
+              <div class="filter-icon"><i class="fas fa-child"></i></div><span>Familial</span>
+            </li>
+            <li class="filter-bar-list-item">
+              <div class="filter-icon"><i class="fas fa-heart"></i></div><span></span>Romantique</span>
+            </li>
+            <li class="filter-bar-list-item">
+              <div class="filter-icon"><i class="fas fa-dog"></i></div><span></span>Animaux autorisés</span>
+            </li>
+          </ul>
+        </section>
+        <!-- //// End of Filters //// -->
         <div class="information">
           <p><i class="i-icon fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>

@@ -41,11 +41,11 @@ body {
 }
 
 .nav-item {
-  position: relative;
+  /* position: relative; */
   margin: 0 25px 0 20px;
+  padding: 16px 28px 0 28px;
   font-size: 80%;
   color: black;
-  padding: 16px 28px 0 28px;
   border-top: 2px solid white;
   /* border: blue dotted; */
 }
@@ -55,7 +55,12 @@ body {
   border-top: 2px solid #0065FC;
 }
 
-/* Searching section */
+/*  //// Searching section  ////  */
+.searching {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px dotted blue;
+}
 h1, h2 {
   font-size: 1.1rem;
 }
@@ -64,20 +69,60 @@ p {
   font-size: 10px;
 }
 
-.searching {
-  width: 90%;
-  margin: 0 auto;
-  border: 2px dotted blue;
+ /* //// search form ////  */
+ .search-bar {
+   display: flex;
+   align-items: center;
+   /* position: relative; */
+   width: auto;
+ }
+
+.search-icon {
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 33px;
+  font-size: 1em;
+  background-color: #F2F2F2;
+  border-radius: 12px 0px 0px 12px;
+ }
+
+.search {
+  display: flex;
+  position: relative;
+  padding: 0.3em 0.5em;
+  font-size: 0.9em;
+  font-weight: 900;
+  border: 2px solid #F2F2F2;
+  padding: 0.5em 0.7em;
 }
 
+.btn-search {
+  /* position: absolute;
+  top: 118px;
+  left: 230px; */
+  padding: 0.5em 0.7em;
+  background-color: #0065FC;
+  color: #FFF;
+  font-size: 0.9em;
+  font-weight: 900;
+  border-radius: 0px 10px 10px 0px;
+  border-color: #0065FC;
+  border: 2px solid #0065FC;
+}
+.btn-search:hover {
+  background-color: #0357d4;
+  transition-duration: 0.3s;
+}
+
+ /* //// Filters //// */
 .filters-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border: 2px chocolate solid;
   width: 70%;
-  height: 50px;
-  padding: 0 1.2em;
+  /* height: 50px; */
+  /* padding: 0 1.2em; */
 }
 
 .filters-bar p {
@@ -85,37 +130,33 @@ p {
   font-weight: 900;
 }
 
-.filters-bar a {
-  font-size: 0.9rem;
-  font-weight: 900;
-  color: black;
-
+.filters-bar-list {
+  display: flex;
+  align-items: center;
+  border: 1px rgb(50, 22, 3) solid;
+  overflow: visible;
+  /* justify-content: space-between; */
 }
+.filter-bar-list-item {
+  /* position: relative; */
 
-.filter {
-  position: relative;
+  display: flex;
+  align-items: center;
   border: 2px solid #e6e6e6;
-  border-radius: 30px 30px 30px 30px;
-  padding: 5px 12px 5px 32px;
-
+  border-radius: 30px 30px;
+  padding: 5px 12px 5px 0px;
+  margin-right: 25px;
+  background-color: #FFF;
 }
 
-.icon {
-  position: absolute;
-  top: -2px;
-  left: -9px;
-  border-radius: 50px;
-  background-color: #DEEBFF;
-  padding: 0.3em 0.5em;
-  /* border: 2px green dotted; */
-}
-
-.fas {
-  height: 22px;
-  width: 18px;
-  padding-right: 1px;
+.filter-icon {
+  height: 1.9em;
+  width: 1.9em;
+  padding-right: 30px;
   color: #0065FC;
-  /* border: 2px red dotted; */
+  border-radius: 100%;
+  background-color: #DEEBFF;
+  /* border: 2px green dotted; */
 }
 
 .information {
@@ -154,30 +195,65 @@ p {
 
 /* //////////////////////////////////////////////// */
 /* Media queries */
+/* //////////////////////////////////////////////// */
+
+/* mobile */
 @media (max-width : 540px) {
+
   body {
     margin: 0;
+    padding: 0;
   }
+
   .header {
     display: flex;
     flex-direction: column;
   }
+
   #logo {
     align-self: center;
   }
   .nav-list {
     align-items: center;
-    /* padding-right: 30px; */
-    padding: 10px;
-    border-bottom: 3px solid #F2F2F2;
+    justify-content: space-between;
+    padding-left: 0px;
+    /* padding: 10px; */
   }
-    .nav-item:hover::after {
-      content: '';
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      width: 140%;
-      height: 2px;
-      background-color: #0065FC;
+
+  .nav-item {
+    margin: 20px 25px 0px 0px;
+    padding: 10px 50px 10px 45px;
+    border-bottom: 2px solid #F2F2F2;
   }
+  .nav-item:hover {
+    /* width: 140%;
+    height: 2px; */
+    /* background-color: #0065FC; */
+    /* padding-bottom: 10px; */
+    margin: 20px 25px 0px 0px;
+    padding: 10px 50px 10px 45px;
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+  }
+    /* filters */
+    .filters-bar {
+
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .filters-bar-list {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 0%;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    .filter-bar-list-item {
+      justify-content: space-between;
+      width: auto;
+      margin: 0 5px 5px 0;
+    }
 }
