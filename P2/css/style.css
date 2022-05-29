@@ -21,6 +21,22 @@ body {
   border: 2px solid black;
 }
 
+h1, h2 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 10px;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+a {
+  color: black;
+}
+
 /* header */
 .header {
   display: flex;
@@ -60,13 +76,6 @@ body {
   width: 90%;
   margin: 0 auto;
   border: 2px dotted blue;
-}
-h1, h2 {
-  font-size: 1.1rem;
-}
-
-p {
-  font-size: 10px;
 }
 
  /* //// search form ////  */
@@ -187,28 +196,83 @@ p {
   border: 2px dotted blue;
 }
 .marseille-accomodations {
-  width: 65%;
-  padding: 2%;
+  width: 50%;
+  /* padding: 2%; */
   background-color: #F2F2F2;
   border: 2px dotted yellow;
 }
-
+/* .marseille-accomodations h2 {
+  margin-top: 0;
+} */
+.all-accomodations-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2%;
+}
 .accomodation-card {
+  width: 200px;
+  height: 150px;
   background-color: #FFF;
-  border: 2px solid red;
-  padding: 5px;
+  padding: 4px 4px 0;
+  border-radius: 10px;
+  margin: 7px;
 }
 .accomodation-card-image {
-  width: 100%;
+  height: 70px;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+
 }
+.accomodation-card-image img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accomodation-card-content{
+  line-height: 4.2px;
+}
+.accomodation-stars {
+ color: #0065FC;
+}
+
 /* popular section */
 .most-popular {
   width: 35%;
-  padding: 2%;
+  /* padding: 2%; */
   background-color: #F2F2F2;
   border: 2px solid green;
 }
 
+/* .all-popular-cards{} */
+
+.popular-card {
+  /* display: flex; */
+  width: 300px;
+  height: 100px;
+  background-color: #FFF;
+  /* padding: 4px 4px 0; */
+  border-radius: 10px;
+  /* margin: 7px; */
+}
+.popular-card-image {
+  height: 10px;
+  /* position: relative; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* overflow: hidden; */
+}
+.popular-card-image img {
+  width: 40%;
+
+}
+.popular-card-content {
+line-height: 4.2px;
+}
 /* Activities section */
 .activities {
   width: 90%;
