@@ -196,8 +196,8 @@ a {
   border: 2px dotted blue;
 }
 .marseille-accomodations {
-  width: 50%;
-  /* padding: 2%; */
+  width: 60%;
+  padding: 2%;
   background-color: #F2F2F2;
   border: 2px dotted yellow;
 }
@@ -206,9 +206,10 @@ a {
 } */
 .all-accomodations-cards {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2%;
+  /* margin: 2%; */
 }
 .accomodation-card {
   width: 200px;
@@ -216,7 +217,7 @@ a {
   background-color: #FFF;
   padding: 4px 4px 0;
   border-radius: 10px;
-  margin: 7px;
+  /* margin: 7px; */
 }
 .accomodation-card-image {
   height: 70px;
@@ -242,36 +243,48 @@ a {
 
 /* popular section */
 .most-popular {
-  width: 35%;
-  /* padding: 2%; */
+  /* width: 60%; */
+  padding: 1%;
   background-color: #F2F2F2;
   border: 2px solid green;
 }
 
-/* .all-popular-cards{} */
+.all-popular-cards{
+  /* padding: 5%; */
+}
 
 .popular-card {
-  /* display: flex; */
+  display: flex;
   width: 300px;
   height: 100px;
+  padding: 4px 0px 4px 4px;
+  border: 2px solid red;
+  /* overflow: hidden; */
   background-color: #FFF;
-  /* padding: 4px 4px 0; */
   border-radius: 10px;
   /* margin: 7px; */
 }
-.popular-card-image {
-  height: 10px;
-  /* position: relative; */
+.popular-card img {
+  height: 100%;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  /* overflow: hidden; */
+  border-bottom-left-radius: 10px;
+  margin-right: 3%;
+  /* position: relative; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  /* overflow:s hidden; */
 }
-.popular-card-image img {
-  width: 40%;
 
-}
 .popular-card-content {
-line-height: 4.2px;
+  margin-top: 0 0 1% 1%;
+}
+
+..popular-card-content h3{
+  margin-bottom: 0;
+}
+.popular-stars {
+  color: #0065FC;
+
 }
 /* Activities section */
 .activities {
