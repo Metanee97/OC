@@ -20,7 +20,6 @@ grey : #F2F2F2
 
 body {
   font-family: 'Raleway', sans-serif;
-  border: 2px solid black;
 }
 
 h1, h2 {
@@ -311,12 +310,12 @@ a {
 }
 
 .all-activities-cards {
-  width: 100%;
-  height: 500px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
+  width: 100%;
+  height: 500px;
   /* padding: 15px; */
 
 }
@@ -565,4 +564,28 @@ height: 120%;
       width: auto;
       margin: 0 5px 5px 0;
     }
+
+    .accomodations {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .marseille-accomodations {
+      background-color: #FFF;
+    }
+
+    .all-activities-cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      /* height: 30%; */
+    }
+
+    .footer-container {
+      display: block;
+    }
 }
+
+/* ----------------------------- *\
+        FOOTER
+\* ----------------------------- */
