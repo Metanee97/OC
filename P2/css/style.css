@@ -249,8 +249,8 @@ a:hover {
 }
 
 .accomodation-card-image {
-  height: 95px;
   position: relative;
+  height: 95px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   overflow: hidden;
@@ -360,7 +360,6 @@ a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   height: 310px;
-  border: 2px solid red;
 }
 
 .activities-card {
@@ -394,15 +393,18 @@ a:hover {
 }
 
 .activities-card1-image {
+  position: relative;
   height: 260px;
 }
 
 .activities-card1-image img {
-  /* top: 43%; */
-  /* left: 44%; */
-  /* transform: translate(-50%, -40%); */
-  /* width: 190%; */
-  /* height: 260px; */
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 305px;
+  object-fit: cover;
 }
 
 .activities-card2 {
@@ -636,15 +638,10 @@ a:hover {
 
     .filters-list {
       flex-wrap: wrap;
-      /* align-items: flex-start; */
       padding: 0%;
-      /* margin-top: 0; */
-      /* width: 100%; */
     }
 
     .filter-list-item {
-      /* justify-content: space-between; */
-      /* width: auto; */
       margin: 0 11px 15px 0;
     }
 
@@ -655,7 +652,7 @@ a:hover {
 
     .information-icon {
       font-size: 70%;
-      margin-top: -25px;
+      /* margin-top: -25px; */
       margin-right: 10px;
     }
 
@@ -713,24 +710,37 @@ a:hover {
     /* ----------------------------- *\
             ACTIVITIES SECTION
     \* ----------------------------- */
+    .activities {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
     .all-activities-cards {
       display: block;
       /* flex-direction: column; */
       /* flex-wrap: wrap; */
-      /* height: 30%; */
+      height: auto;
     }
 
     .activities-card {
-      width: 90%;
+      width: 330px;
       height: 160px;
       margin-bottom: 25px;
-      margin-right: 25px;
+      /* margin-right: 25px; */
       box-shadow: 6px 4px 12px #d1cfcf;
     }
 
     .activities-card-image {
+      width: 330px;
       height: 97px;
     }
+
+    .activities-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     /* ----------------------------- *\
             FOOTER
     \* ----------------------------- */
@@ -741,8 +751,110 @@ a:hover {
 
 @media (min-width : 768px) and (max-width: 992px) {
 
+/* ----------------------------- *\
+          SEARCHING SECTION
+\* ----------------------------- */
   .search {
     width: 50%;
+  }
+/* FILTERS */
+
+  .all-filters {
+    display: block;
+  }
+
+  .filters-list {
+    flex-wrap: wrap;
+    padding: 0%;
+  }
+
+  .filter-list-item {
+    margin: 0 11px 15px 0;
+  }
+
+  /* ----------------------------- *\
+            ACCOMODATION SECTION
+  \* ----------------------------- */
+  .marseille-accomodations {
+    padding: 0;
+  }
+
+  .marseille-accomodations h2 {
+    margin-left: 20px;
+  }
+
+  .all-accomodations-cards {
+    justify-content: space-around;
+    margin: 25px 10px 0px 10px;
+  }
+
+  .accomodation-card {
+    margin-right: 0px;
+  }
+
+/* ----------------------------- *\
+        MOST POPULAR SECTION
+\* ----------------------------- */
+  .most-popular {
+    width: 33%;
+    padding: 0 0 0 15px;
+  }
+
+  .most-popular-title {
+    margin: 0px 10px 8px 10px;
+  }
+
+  .all-popular-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -8px;
+  }
+
+  .popular-card {
+    display: block;
+    width: 210px;
+    height: 170px;
+    background-color: #FFF;
+    padding: 4px 4px 0;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    border-radius: 10px;
+  }
+
+  .popular-card-image {
+    position: relative;
+    height: 95px;
+    width: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+}
+
+  .popular-card-image img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .popular-card-content {
+    /* line-height: 4.2px; */
+    margin: 5px 5px 0px 5px;
+  }
+
+  .popular-card-content p {
+    /* line-height: 4.2px; */
+    margin-top: 1px;
+    margin-bottom: 0px;
+  }
+
+  .popular-stars {
+    margin-top: 6px;
+    color: #F2F2F2;
+    font-size: 10px;
   }
 
   .all-activities-cards {
