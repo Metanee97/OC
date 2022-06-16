@@ -221,7 +221,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   /* width: 93%;
   margin: 10px auto; */
 }
@@ -239,7 +239,7 @@ a:hover {
   margin: 25px 0px;
 }
 .accomodation-card {
-  width: 210px;
+  width: 199px;
   height: 170px;
   background-color: #FFF;
   padding: 4px 4px 0;
@@ -359,7 +359,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 310px;
+  height: 400px;
 }
 
 .activities-card {
@@ -380,115 +380,114 @@ a:hover {
 
 .activities-card-image img {
   position: absolute;
+  object-fit: cover;
 }
 
 .activities-card-title {
-  /* margin: 20px; */
-  /* height: 45px; */
-
+  margin: 15px;
 }
 
 .activities-card1 {
-  height: 305px;
+  height: 325px;
 }
 
 .activities-card1-image {
-  position: relative;
-  height: 260px;
+  height: 280px;
 }
 
 .activities-card1-image img {
-  position: absolute;
   top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 220px;
-  height: 305px;
+  height: 325px;
   object-fit: cover;
 }
 
 .activities-card2 {
-  height: 150px;
-  margin-bottom: 40px;
+  height: 170px;
+  margin-bottom: 20px;
 }
 
 .activities-card2-image {
-  height: 105px;
+  height: 125px;
 }
 
-/* .activities-card2-image img {
+.activities-card2-image img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 140%;
-} */
+  /* height: 100%; */
+
+}
 
 .activities-card3 {
-  height: 116px;
+  height: 136px;
   /* margin-bottom: 40px; */
 }
 
 .activities-card3-image {
-  height: 71px;
+  height: 91px;
 }
 
-/* .activities-card3-image img {
+.activities-card3-image img {
   top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-} */
+  /* height: 136px; */
+}
 
 .activities-card4 {
-  height: 305px;
+  height: 325px;
 }
 
 .activities-card4-image {
-  height: 260px;
+  height: 280px;
 }
 
-/* .activities-card4-image img {
-  top: 43%;
-  left: 44%;
+.activities-card4-image img {
+  top: 40%;
+  left: 47%;
   transform: translate(-50%, -40%);
-  width: 190%;
-  height: 120%;
-} */
+  /* width: 100%; */
+  height: 100%;
+}
 
 .activities-card5 {
-  height: 127px;
-  margin-bottom: 40px;
+  height: 147px;
+  margin-bottom: 20px;
 }
 
 .activities-card5-image {
-  height: 82px;
+  height: 102px;
 }
 
-/* .activities-card5-image img {
+.activities-card5-image img {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 140%;
-} */
+  /* height: 140%; */
+}
 
 .activities-card6 {
-  height: 139px;
+  height: 159px;
   /* margin-bottom: 40px; */
 }
 
 .activities-card6-image {
-  height: 94px;
+  height: 114px;
 }
 
-/* .activities-card6-image img {
+.activities-card6-image img {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 140%;
-} */
+  /* height: 140%; */
+}
 
 /* ----------------------------- *\
         FOOTER
@@ -512,11 +511,11 @@ a:hover {
 
 .footer-list-item {
   font-size: 80%;
-  padding: 3px;
+  margin-bottom: 10px;
 }
 
 .footer-list {
-  margin-right: 20%;
+  margin-right: 170px;
 }
 
 
@@ -524,7 +523,7 @@ a:hover {
         MEDIA QUERIES
 \* ----------------------------- */
 
-/* mobile */
+/* MOBILE */
 @media (max-width : 768px) {
 
   .wrapper {
@@ -732,24 +731,30 @@ a:hover {
 
     .activities-card-image {
       width: 330px;
-      height: 97px;
+      height: 117px;
     }
 
     .activities-card-image img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
     }
 
     /* ----------------------------- *\
             FOOTER
     \* ----------------------------- */
-    .footer-container {
+    .footer .wrapper {
       display: block;
+      width: 90%;
+    }
+
+    .footer-list {
+      margin-bottom: 35px;
+      margin-right: 125px;
     }
 }
 
-@media (min-width : 768px) and (max-width: 992px) {
+/* TABLET */
+@media (min-width : 767px) and (max-width: 992px) {
 
 /* ----------------------------- *\
           SEARCHING SECTION
@@ -838,6 +843,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
   }
 
   .popular-card-content {
@@ -857,10 +863,55 @@ a:hover {
     font-size: 10px;
   }
 
-  .all-activities-cards {
-    display: block;
-  }
+/* ----------------------------- *\
+        ACTIVITIES SECTION
+\* ----------------------------- */
+/* .activities {
+  text-align: center;
+} */
 
+.all-activities-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
 
+.activities-card-image {
+  height: 260px;
+}
 
+.activities-card-image img {
+  /* height: auto; */
+}
+
+.activities-card1 {
+  height: 305px;
+}
+
+.activities-card2 {
+  height: 305px;
+}
+
+.activities-card3 {
+  height: 305px;
+  order: 3;
+}
+
+.activities-card4 {
+  height: 305px;
+}
+
+.activities-card5 {
+  height: 305px;
+}
+
+.activities-card6 {
+  height: 305px;
+}
+
+.footer-list {
+  margin-right: 100px;
+}
 }
