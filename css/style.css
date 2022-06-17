@@ -22,7 +22,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 95%;
+  width: 93%;
   border: 1px solid green;
 }
 
@@ -238,10 +238,10 @@ a:hover {
 
 .all-accomodations-cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-around; */
+  /* align-items: center; */
   flex-wrap: wrap;
-  /* margin: 25px 0px; */
+  /* margin: auto; */
 }
 .accomodation-card {
   width: 199px;
@@ -249,7 +249,7 @@ a:hover {
   background-color: #FFF;
   padding: 4px 4px 0;
   margin-bottom: 30px;
-  margin-right: 25px;
+  margin-right: 50px;
   border-radius: 10px;
 }
 
@@ -304,7 +304,7 @@ a:hover {
   padding: 4px 21px 4px 4px;
   background-color: #FFF;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .popular-card-image {
@@ -361,6 +361,7 @@ a:hover {
   padding: 0;
   margin: 0;
 }
+
 .all-activities-cards {
   display: flex;
   flex-direction: column;
@@ -369,12 +370,12 @@ a:hover {
 }
 
 .activities-card {
-  width: 240px;
+  width: 285px;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 6px 4px 12px #d1cfcf;
   font-size: 30px;
-  /* margin: 3px; */
+  margin: 3px;
 }
 
 .activities-card-image {
@@ -395,29 +396,29 @@ a:hover {
 }
 
 .activities-card1 {
-  height: 325px;
+  height: 400px;
 }
 
 .activities-card1-image {
-  height: 280px;
+  height: 355px;
 }
 
 .activities-card1-image img {
-  top: 56%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* width: 220px; */
-  height: 325px;
+  height: 100%;
   object-fit: cover;
 }
 
 .activities-card2 {
-  height: 170px;
-  margin-bottom: 20px;
+  height: 210px;
+  margin-bottom: 40px;
 }
 
 .activities-card2-image {
-  height: 125px;
+  height: 165px;
 }
 
 .activities-card2-image img {
@@ -425,16 +426,15 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   /* height: 100%; */
-
 }
 
 .activities-card3 {
-  height: 136px;
+  height: 150px;
   /* margin-bottom: 40px; */
 }
 
 .activities-card3-image {
-  height: 91px;
+  height: 105px;
 }
 
 .activities-card3-image img {
@@ -445,11 +445,11 @@ a:hover {
 }
 
 .activities-card4 {
-  height: 325px;
+  height: 400px;
 }
 
 .activities-card4-image {
-  height: 280px;
+  height: 355px;
 }
 
 .activities-card4-image img {
@@ -460,12 +460,12 @@ a:hover {
 }
 
 .activities-card5 {
-  height: 147px;
-  margin-bottom: 20px;
+  height: 178px;
+  margin-bottom: 40px;
 }
 
 .activities-card5-image {
-  height: 102px;
+  height: 133px;
 }
 
 .activities-card5-image img {
@@ -476,12 +476,12 @@ a:hover {
 }
 
 .activities-card6 {
-  height: 159px;
+  height: 182px;
   /* margin-bottom: 40px; */
 }
 
 .activities-card6-image {
-  height: 114px;
+  height: 137px;
 }
 
 .activities-card6-image img {
