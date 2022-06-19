@@ -31,7 +31,7 @@ h1, h2 {
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 p {
@@ -366,7 +366,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 400px;
+  align-content: space-around;
+  height: 410px;
 }
 
 .activities-card {
@@ -693,19 +694,19 @@ a:hover {
     \* ----------------------------- */
     .most-popular {
       width: 100%;
-      padding: 20px 0 0 20px;
+      /* padding: 20px 0 0 20px; */
     }
 
     .most-popular-title {
-      margin-right: 52px;
+      /* margin-right: 52px; */
     }
 
     .popular-card-content p {
-      font-size: 12px;
+      font-size: 13px;
     }
 
     .popular-stars {
-      margin-top: 32px;
+      margin-top: 40px;
     }
 
     /* ----------------------------- *\
@@ -784,46 +785,54 @@ a:hover {
   /* ----------------------------- *\
             ACCOMODATION SECTION
   \* ----------------------------- */
+  .accomodations {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .marseille-accomodations {
-    padding: 0;
+    width: 100%;
+    padding: 20px 0px 30px 30px;
   }
 
-  .marseille-accomodations h2 {
+  /* .marseille-accomodations h2 {
     margin-left: 20px;
-  }
+  } */
 
   .all-accomodations-cards {
-    justify-content: space-around;
-    margin: 25px 10px 0px 10px;
+    /* justify-content: space-around; */
+    /* margin: 25px 10px 0px 10px; */
+    margin-top: 20px;
   }
 
   .accomodation-card {
-    margin-right: 0px;
+    margin-right: 30px;
   }
 
 /* ----------------------------- *\
         MOST POPULAR SECTION
 \* ----------------------------- */
   .most-popular {
-    width: 33%;
-    padding: 0 0 0 15px;
+    width: 100%;
+    /* padding: 0 0 0 15px; */
+    margin-bottom: 15px;
   }
 
   .most-popular-title {
-    margin: 0px 10px 8px 10px;
+    /* margin: 0px 10px 8px 10px; */
   }
 
   .all-popular-cards {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    /* flex-direction: column; */
     align-items: center;
-    margin-right: -8px;
+    /* margin-right: -8px; */
   }
 
   .popular-card {
     display: block;
     width: 210px;
-    height: 170px;
+    height: 180px;
     background-color: #FFF;
     padding: 4px 4px 0;
     margin-bottom: 30px;
@@ -851,6 +860,7 @@ a:hover {
   }
 
   .popular-card-content {
+    position: relative;
     /* line-height: 4.2px; */
     margin: 5px 5px 0px 5px;
   }
@@ -862,7 +872,9 @@ a:hover {
   }
 
   .popular-stars {
-    margin-top: 6px;
+    position: absolute;
+    top: 11px;
+    /* margin-top: 6px; */
     color: #F2F2F2;
     font-size: 10px;
   }
@@ -870,9 +882,9 @@ a:hover {
 /* ----------------------------- *\
         ACTIVITIES SECTION
 \* ----------------------------- */
-/* .activities {
-  text-align: center;
-} */
+.activities h2 {
+  margin-left: 30px;
+}
 
 .all-activities-cards {
   display: flex;
@@ -883,7 +895,7 @@ a:hover {
 }
 
 .activities-card-image {
-  height: 100px;
+  height: 90px;
 }
 
 .activities-card-image img {
@@ -892,6 +904,7 @@ a:hover {
 
 .activities-card {
   height: 130px;
+  margin-bottom: 20px;
 }
 
 .activities-card-title {
