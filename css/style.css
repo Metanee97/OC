@@ -212,7 +212,7 @@ a:hover {
 }
 
 .marseille-accomodations {
-  width: 66%;
+  width: 67%;
   padding: 18px 30px 31px 30px;
   background-color: #F2F2F2;
   border-radius: 10px;
@@ -267,7 +267,7 @@ a:hover {
         MOST POPULAR SECTION
 \* ----------------------------- */
 .most-popular {
-  width: 32%;
+  width: 31%;
   padding: 20px 15px 0 30px;
   background-color: #F2F2F2;
   border-radius: 10px;
@@ -331,7 +331,7 @@ a:hover {
 }
 
 .popular-stars {
-  font-size: 8px;
+  font-size: 10px;
   color: #F2F2F2;
 }
 
@@ -616,6 +616,8 @@ a:hover {
 
     .all-filters {
       display: block;
+      width: 90%;
+      margin: 0 auto;
     }
 
     .filters-list {
@@ -630,6 +632,11 @@ a:hover {
     .filter-icon-container {
       font-size: 17px;
       padding: 25px;
+    }
+
+    .information {
+      width: 90%;
+      margin: 0 auto;
     }
 
     .information-icon {
@@ -647,19 +654,25 @@ a:hover {
 
     .marseille-accomodations {
       width: 100%;
-      padding: 18px 0px 31px 20px;
+      padding: 18px 18px 30px 18px;
       background-color: #FFF;
       border-radius: 0;
     }
 
     .all-accomodations-cards {
-      display: block;
+      /* display: block; */
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
     }
 
     .accomodation-card {
-      width: 90%;
+      /* width: 90%; */
+      width: 330px;
       height: 170px;
       box-shadow: 6px 4px 12px #d1cfcf;
+      margin-right: auto;
+      /* margin-left: auto; */
     }
 
     .accomodation-card-image {
@@ -675,15 +688,16 @@ a:hover {
     \* ----------------------------- */
     .most-popular {
       width: 100%;
+      margin-bottom: 20px;
     }
 
     .popular-card-content p {
       font-size: 13px;
     }
 
-    .popular-stars {
+    /* .popular-stars {
       margin-top: 40px;
-    }
+    } */
 
     /* ----------------------------- *\
             ACTIVITIES SECTION
@@ -764,7 +778,8 @@ a:hover {
   }
   .marseille-accomodations {
     width: 100%;
-    padding: 20px 0px 30px 30px;
+    /* padding: 20px 0px 30px 30px; */
+    padding: 18px 0px 31px 20px;
     border-radius: 0;
   }
 
@@ -773,6 +788,8 @@ a:hover {
   } */
 
   .all-accomodations-cards {
+    /* display: block; */
+    /* flex-wrap: wrap; */
     /* justify-content: space-around; */
     /* margin: 25px 10px 0px 10px; */
     justify-content: space-around;
@@ -780,8 +797,15 @@ a:hover {
   }
 
   .accomodation-card {
-    width: 285px;
-    margin-right: 30px;
+    /* width: 330px; */
+    width: 90%;
+    /* height: 170px; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .accomodation-card-image {
+    height: 97px;
   }
 
 /* ----------------------------- *\
