@@ -233,6 +233,10 @@ a:hover {
   border-radius: 10px;
 }
 
+.accomodation-card:hover {
+  transform: scale(1.1);
+}
+
 .accomodation-card-image {
   position: relative;
   height: 95px;
@@ -295,6 +299,10 @@ a:hover {
   overflow: hidden;
 }
 
+.popular-card:hover {
+  transform: scale(1.1);
+}
+
 .popular-card-image img {
   position: absolute;
   width: 100%;
@@ -306,7 +314,10 @@ a:hover {
 }
 
 .popular-card-content {
-  margin: 3px 0px 0px 15px;
+  padding: 10px 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popular-card-content h3 {
@@ -316,10 +327,10 @@ a:hover {
 
 .popular-card-content p {
   margin-top: 5px;
+
 }
 
 .popular-stars {
-  margin-top: 45px;
   font-size: 8px;
   color: #F2F2F2;
 }
@@ -355,6 +366,10 @@ a:hover {
   box-shadow: 6px 4px 12px #d1cfcf;
   font-size: 30px;
   margin: 3px;
+}
+
+.activities-card:hover {
+  transform: scale(1.1);
 }
 
 .activities-card-image {
