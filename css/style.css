@@ -120,8 +120,9 @@ a:hover {
 }
 
 .btn-search:hover {
-  background-color: #0357d4;
+  background-color: #1b76ffb3;
   transition-duration: 0.3s;
+  border: 2px solid #1b76ffb3;
 }
 
 .btn-search-icon {
@@ -177,8 +178,9 @@ a:hover {
 }
 
 .filter-button:hover {
-  background-color: #0065FC;
+  background-color: #1b76ffb3;
   color: #FFF;
+  transition-duration: 0.3s;
   box-shadow: inset 0 0 1px #FFF;
 }
 
@@ -235,6 +237,7 @@ a:hover {
 
 .accomodation-card:hover {
   transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .accomodation-card-image {
@@ -254,8 +257,19 @@ a:hover {
 }
 
 .accomodation-card-content {
-  line-height: 4.2px;
-  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* line-height: 4.2px; */
+  /* margin: 12px; */
+}
+
+.accomodation-card-content h3 {
+  margin: 0;
+}
+
+.accomodation-card-content p {
+  margin: 0;
 }
 
 .accomodation-stars {
@@ -285,10 +299,10 @@ a:hover {
   display: flex;
   width: 90%;
   height: 130px;
-  padding: 4px 21px 4px 4px;
+  padding: 4px 33px 4px 4px;
   background-color: #FFF;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .popular-card-image {
@@ -301,6 +315,7 @@ a:hover {
 
 .popular-card:hover {
   transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .popular-card-image img {
@@ -314,10 +329,10 @@ a:hover {
 }
 
 .popular-card-content {
-  padding: 10px 0px 5px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px 0px 5px 15px;
 }
 
 .popular-card-content h3 {
@@ -370,6 +385,7 @@ a:hover {
 
 .activities-card:hover {
   transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .activities-card-image {
@@ -610,6 +626,11 @@ a:hover {
       font-size: 110%;
       border-radius: 15px 15px 15px 15px;
       border: 2px solid #0065FC;
+    }
+
+    .btn-search-icon {
+      background-color: #1b76ffb3;
+      transition-duration: 0.3s;
     }
 
     /* FILTERS */
