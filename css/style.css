@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap');
-@import url("normalize.css");
 
 * {
   box-sizing: border-box;
@@ -69,7 +68,7 @@ a:hover {
 
 .nav-item:hover {
   color: #0065FC;
-  font-weight: 700;
+  /* font-weight: 700; */
   border-top: 2px solid #0065FC;
 }
 
